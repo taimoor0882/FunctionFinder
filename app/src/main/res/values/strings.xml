@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">LoginScreenActivity</string>
+    <string name="create_account">Create Account</string>
+    <string name="signupimage">SignUpImage</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="enter_phone_number">Enter Email Number</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="password">Password</string>
+    <string name="already_have_an_account_sign_in">Already have an account? Sign In</string>
+    <string name="or">Or</string>
+    <string name="enter_confirm_password">enter confirm password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

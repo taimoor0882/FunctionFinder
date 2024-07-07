@@ -1,0 +1,18 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="142dp"
+    android:layout_height="139dp"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <ImageView
+        android:id="@+id/imageMessageSent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</androidx.cardview.widget.CardView>

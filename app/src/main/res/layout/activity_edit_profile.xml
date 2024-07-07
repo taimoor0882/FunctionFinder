@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".edit_profile">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Profile Text -->
+        <TextView
+            android:id="@+id/profileText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppin_reg"
+            android:text="Profile"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/forward"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Profile Image -->
+        <RelativeLayout
+            android:id="@+id/profileImageContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/profileText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="36dp">
+
+            <ImageView
+                android:id="@+id/circleBackground"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:src="@drawable/profile_circle_backgroud" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImage"
+                android:layout_width="106.67dp"
+                android:layout_height="106.67dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile_picture" />
+        </RelativeLayout>
+
+        <!-- First Name Field -->
+        <TextView
+            android:id="@+id/textViewFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:text="First Name"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppin_reg"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profileImageContainer" />
+
+        <EditText
+            android:id="@+id/editTextFirstName"
+            android:layout_width="342dp"
+            android:layout_height="44dp"
+            android:fontFamily="@font/poppin_reg"
+            android:paddingStart="10dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="18dp"
+            android:hint="First Name"
+            android:background="@drawable/inputtext"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewFirstName" />
+
+        <!-- Last Name Field -->
+        <TextView
+            android:id="@+id/textViewLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppin_reg"
+            android:textSize="18sp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextFirstName" />
+
+        <EditText
+            android:id="@+id/editTextLastName"
+            android:layout_width="342dp"
+            android:layout_height="44dp"
+            android:fontFamily="@font/poppin_reg"
+            android:paddingStart="10dp"
+            android:layout_marginTop="11dp"
+            android:hint="Last Name"
+            android:background="@drawable/inputtext"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewLastName" />
+
+        <!-- Email Field -->
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppin_reg"
+            android:textSize="18sp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextLastName" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="342dp"
+            android:layout_height="44dp"
+            android:fontFamily="@font/poppin_reg"
+            android:paddingStart="10dp"
+            android:layout_marginTop="11dp"
+            android:hint="Email"
+            android:background="@drawable/inputtext"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewEmail" />
+
+        <!-- Save Changes Button -->
+        <Button
+            android:id="@+id/buttonSaveChanges"
+            android:layout_width="212dp"
+            android:layout_height="52dp"
+            android:text="Save changes"
+            android:layout_marginTop="18dp"
+            android:backgroundTint="#D75B83"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppin_reg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextEmail" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
